@@ -101,9 +101,9 @@ export default function Home() {
               首批种子用户计划 · 开放中
             </div>
             <h1 className="text-balance text-[3.4rem] font-black leading-[.92] tracking-[-.07em]">
-              把文件收集时间
+              把繁琐的 eTMF
               <br />
-              <span className="text-[#b7f34a]">还给现场。</span>
+              <span className="text-[#b7f34a]">文件收集简化。</span>
             </h1>
             <p className="mt-7 text-lg leading-8 text-white/68">
               面向 CRC、CRA 与 TMF
