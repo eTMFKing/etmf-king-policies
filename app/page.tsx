@@ -16,9 +16,9 @@ import {
 import Image from 'next/image';
 
 const steps = [
-  ['01', '扫描', 'iPhone 文档相机自动裁切，多页合成 PDF。'],
-  ['02', '确认', 'OCR 提取内容，给出 TMF 目录 Top 3 候选。'],
-  ['03', '归档', '生成规范文件名，保存到试验 / 中心目录。'],
+  ['01', '文件收集', 'iPhone 文档相机自动裁切，多页合成 PDF。'],
+  ['02', '确认', 'OCR 提取内容，从 TMF Index 中智能匹配候选。'],
+  ['03', '保存', '生成规范文件名，保存到试验 / 中心目录。'],
 ];
 
 const features = [
@@ -32,7 +32,7 @@ const features = [
     icon: BrainCircuit,
     title: 'OCR + 智能匹配',
     description:
-      '在设备端识别文件内容，从 250 项 TMF 目录中给出候选，不替你做黑箱决定。',
+      '从 TMF Index 中智能匹配，减少你的工作量；低置信结果由你确认并可手动修改。',
   },
   {
     icon: FileOutput,
@@ -101,13 +101,13 @@ export default function Home() {
               首批种子用户计划 · 开放中
             </div>
             <h1 className="text-balance text-[3.4rem] font-black leading-[.92] tracking-[-.07em]">
-              把归档时间
+              把文件收集时间
               <br />
               <span className="text-[#b7f34a]">还给现场。</span>
             </h1>
             <p className="mt-7 text-lg leading-8 text-white/68">
               面向 CRC、CRA 与 TMF
-              管理者的移动归档工具。扫描、识别、匹配目录，再生成规范文件名，一台
+              管理者的移动文件收集工具。扫描、识别、匹配目录，再生成规范文件名，一台
               iPhone 就能完成。
             </p>
             <a
@@ -133,7 +133,7 @@ export default function Home() {
           <h2 className="mt-4 text-balance text-3xl font-black leading-[1.08] tracking-[-.045em]">
             不是又一个文件夹，
             <br />
-            是现场归档的下一步。
+            是现场文件收集的下一步。
           </h2>
           <p className="mt-5 text-base leading-7 text-[#5d6f82]">
             把扫描后的辨认、查目录、改名和整理收进一条连续路径。智能结果始终留给你确认，符合机构
@@ -144,7 +144,7 @@ export default function Home() {
             <div className="flex items-center justify-between border-b border-[#e7edf2] px-4 py-3">
               <span className="flex items-center gap-2 text-sm font-black">
                 <ScanLine className="size-4 text-[#0b6fd4]" />
-                智能归档预览
+                智能文件收集预览
               </span>
               <span className="font-mono text-[11px] text-[#8090a0]">
                 SCAN → MATCH → NAME
@@ -155,7 +155,7 @@ export default function Home() {
                 <div className="flex items-center justify-between text-xs font-bold text-[#708296]">
                   <span>扫描文件</span>
                   <span className="rounded bg-white px-2 py-1 text-[#0b6fd4]">
-                    Protocol Signature Page
+                    Protocol Signature Page v1.0
                   </span>
                 </div>
                 <div className="mt-4 space-y-2">
@@ -168,10 +168,10 @@ export default function Home() {
                 <FileCheck2 className="size-6 shrink-0 text-[#4a7d11]" />
                 <div>
                   <p className="text-xs font-bold text-[#4a7d11]">
-                    01.01.02 · 已签署的试验方案
+                    05.02.02 · 试验方案签字页
                   </p>
                   <p className="mt-1 break-all font-mono text-[11px] leading-5 text-[#41532c]">
-                    CN001_01.01.02_Protocol_v2.0.pdf
+                    05.02.02_Protocol Signature Page_v1.0.pdf
                   </p>
                 </div>
               </div>
@@ -190,6 +190,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="mt-3 text-center text-xs leading-5 text-[#6c7c8d]">
+            目录参考：TMF Reference Model v3.3.1
+          </p>
         </section>
 
         <section className="bg-[#f7fafc] px-5 pb-14">
@@ -200,7 +203,7 @@ export default function Home() {
                   HOW IT WORKS
                 </p>
                 <h2 className="mt-3 text-3xl font-black tracking-[-.045em]">
-                  三步，完成一次归档。
+                  三步，完成文件收集。
                 </h2>
               </div>
               <ArrowRight className="mb-1 size-6 text-[#b7f34a]" />
@@ -260,7 +263,8 @@ export default function Home() {
           </div>
           <div className="mt-5 flex items-start gap-3 rounded-2xl border border-[#b7f34a]/20 bg-[#b7f34a]/8 p-4 text-sm leading-6 text-white/65">
             <ShieldCheck className="mt-0.5 size-5 shrink-0 text-[#b7f34a]" />
-            试验原始文件不通过本报名页上传；低置信结果由用户确认。
+            扫描的 PDF
+            文件仅保存在本地，应用不会上传；低置信结果由用户确认，并可手动修改。
           </div>
         </section>
 
@@ -291,7 +295,8 @@ export default function Home() {
           <div className="mt-5 flex items-start gap-3 rounded-2xl bg-[#071321] p-4 text-sm leading-6 text-white/78">
             <Users className="mt-0.5 size-5 shrink-0 text-[#b7f34a]" />
             <span>
-              内测期间免费体验，报名后分批邀请；不替代正式 eTMF 系统与机构 SOP。
+              内测期间免费体验，报名后分批邀请；它不是 eTMF
+              系统的替代品，而是帮助你更高效完成文件收集与整理。
             </span>
           </div>
         </section>
@@ -342,7 +347,7 @@ export default function Home() {
             <span className="text-sm font-black">eTMF 王</span>
           </div>
           <span className="text-xs text-white/35">
-            临床试验文件 · 智能扫描归档
+            临床试验文件 · 智能扫描收集
           </span>
         </footer>
       </div>
