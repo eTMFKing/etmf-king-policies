@@ -103,10 +103,10 @@ export default function Home() {
             <h1 className="text-balance text-[3.4rem] font-black leading-[.94] tracking-[-.07em]">
               <span className="block text-[.92em]">优化 eTMF 文件收集</span>
               <span className="mt-2 block text-[.78em] leading-[1.08] text-[#b7f34a]">
-                把 onsite 时间还给监查，
+                Onsite 时间还给监查
               </span>
               <span className="block text-[.78em] leading-[1.08] text-[#b7f34a]">
-                把精力留给潜在风险。
+                精力留给潜在风险
               </span>
             </h1>
             <p className="mt-7 text-lg leading-8 text-white/68">
@@ -140,7 +140,7 @@ export default function Home() {
             是现场文件采集的下一代工具。
           </h2>
           <p className="mt-5 text-base leading-7 text-[#5d6f82]">
-            把扫描、识别、搜索、分类和整理收进一条连续路径。智能结果留给你确认；文件名可以按需要灵活手动修改，找到文件、改好名字，再保存到对应位置。
+            把扫描、识别、搜索、分类和整理收进一条连续路径。识别结果由你确认，文件名也可以灵活手动修改。
           </p>
 
           <div className="mt-8 overflow-hidden rounded-[22px] border border-[#d9e3eb] bg-white shadow-[0_14px_38px_rgba(24,54,78,.08)]">
@@ -183,7 +183,7 @@ export default function Home() {
 
           <div className="mt-7 grid grid-cols-3 divide-x divide-[#d9e3eb] rounded-2xl border border-[#d9e3eb] bg-white py-4 text-center">
             {[
-              ['250', 'TMF 目录项'],
+              ['可定制', 'TMF 目录'],
               ['Top 3', '候选结果'],
               ['3 级', '目录结构'],
             ].map(([value, label]) => (
@@ -194,7 +194,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-3 text-center text-xs leading-5 text-[#6c7c8d]">
-            目录参考：TMF Reference Model v3.3.1
+            预设目录：TMF Reference Model v3.3.1
           </p>
         </section>
 
