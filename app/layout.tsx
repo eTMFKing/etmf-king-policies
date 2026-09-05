@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'eTMF王种子用户计划｜让临床文件归档更轻松',
   description:
-    'eTMF王是一款面向 CRC、CRA 与 TMF 管理者的移动归档工具。申请成为首批种子用户，共同打磨更高效的临床试验文件工作流。',
+    'eTMF王是一款面向 CRC、CRA 与 TMF 管理者的移动归档工具。通过邮件联系 eTMFKing@qq.com，了解首批种子用户体验计划。',
 };
 
 export default function RootLayout({
