@@ -100,10 +100,14 @@ export default function Home() {
               </span>
               首批种子用户计划 · 开放中
             </div>
-            <h1 className="text-balance text-[3.4rem] font-black leading-[.92] tracking-[-.07em]">
-              把繁琐的 eTMF
-              <br />
-              <span className="text-[#b7f34a]">文件收集简化。</span>
+            <h1 className="text-balance text-[3.4rem] font-black leading-[.94] tracking-[-.07em]">
+              <span className="block text-[.92em]">优化 eTMF 文件收集</span>
+              <span className="mt-2 block text-[.78em] leading-[1.08] text-[#b7f34a]">
+                把 onsite 时间还给监查，
+              </span>
+              <span className="block text-[.78em] leading-[1.08] text-[#b7f34a]">
+                把精力留给潜在风险。
+              </span>
             </h1>
             <p className="mt-7 text-lg leading-8 text-white/68">
               面向 CRC、CRA 与 TMF
@@ -131,13 +135,12 @@ export default function Home() {
             产品概览 / PRODUCT
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black leading-[1.08] tracking-[-.045em]">
-            不是又一个文件夹，
+            不是又一个扫描 App，
             <br />
-            是现场文件收集的下一步。
+            是现场文件采集的下一代工具。
           </h2>
           <p className="mt-5 text-base leading-7 text-[#5d6f82]">
-            把扫描后的辨认、查目录、改名和整理收进一条连续路径。智能结果始终留给你确认，符合机构
-            SOP 的专业判断仍然由你掌握。
+            把扫描、识别、搜索、分类和整理收进一条连续路径。智能结果留给你确认；文件名可以按需要灵活手动修改，找到文件、改好名字，再保存到对应位置。
           </p>
 
           <div className="mt-8 overflow-hidden rounded-[22px] border border-[#d9e3eb] bg-white shadow-[0_14px_38px_rgba(24,54,78,.08)]">
@@ -234,9 +237,9 @@ export default function Home() {
             核心功能 / FEATURES
           </p>
           <h2 className="mt-4 text-3xl font-black leading-[1.08] tracking-[-.045em]">
-            为文件而生，
+            为现场采集文件而生，
             <br />
-            也为做文件的人而生。
+            也为采集文件的人而生。
           </h2>
           <div className="mt-8 space-y-3">
             {features.map((feature) => {
