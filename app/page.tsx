@@ -38,7 +38,7 @@ const features = [
     icon: FileOutput,
     title: '规范文件名',
     description:
-      '按试验、中心、目录号、类型、版本和日期组合文件名，减少手工偏差。',
+      '按试验、国家、中心、目录号、文档、版本和日期组合成七段文件名，减少手工偏差。',
   },
   {
     icon: FolderTree,
@@ -49,7 +49,7 @@ const features = [
 
 const fitFor = [
   '每天或每周都要处理试验文件',
-  '经常在纸质文件、相册和文件夹间切换',
+  '经常在纸质文件、扫描软件和文件夹间切换',
   '愿意用真实合规流程给产品反馈',
 ];
 
@@ -174,7 +174,7 @@ export default function Home() {
                     05.02.02 · 试验方案签字页
                   </p>
                   <p className="mt-1 break-all font-mono text-[11px] leading-5 text-[#41532c]">
-                    05.02.02_Protocol Signature Page_v1.0.pdf
+                    CN001_CN_001_05.02.02_ProtocolSignaturePage_v1.0_20250801.pdf
                   </p>
                 </div>
               </div>
@@ -298,8 +298,7 @@ export default function Home() {
           <div className="mt-5 flex items-start gap-3 rounded-2xl bg-[#071321] p-4 text-sm leading-6 text-white/78">
             <Users className="mt-0.5 size-5 shrink-0 text-[#b7f34a]" />
             <span>
-              内测期间免费体验，报名后分批邀请；它不是 eTMF
-              系统的替代品，而是帮助你更高效完成文件收集与整理。
+              内测期间免费体验，报名后分批邀请；它不只是扫描软件，也帮助你更高效完成文件收集与整理。
             </span>
           </div>
         </section>
