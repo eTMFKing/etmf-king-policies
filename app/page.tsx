@@ -38,7 +38,7 @@ const features = [
     icon: FileOutput,
     title: '规范文件名',
     description:
-      '按试验、国家、中心、目录号、文档、版本和日期组合成七段文件名，减少手工偏差。',
+      '按试验号、中心号、TMF 编号、文件名、版本号和版本日期组合标准文件名，方便检索。',
   },
   {
     icon: FolderTree,
@@ -101,7 +101,7 @@ export default function Home() {
               首批种子用户计划 · 开放中
             </div>
             <h1 className="text-balance text-[3.4rem] font-black leading-[.94] tracking-[-.07em]">
-              <span className="block text-[.92em]">优化 eTMF 文件收集</span>
+              <span className="block text-[.92em]">优化文件收集</span>
               <span className="mt-2 block text-[.78em] leading-[1.08] text-[#b7f34a]">
                 Onsite 时间还给监查
               </span>
@@ -121,9 +121,6 @@ export default function Home() {
               发邮件申请体验
               <Mail className="size-5" />
             </a>
-            <p className="mt-4 text-center text-sm text-white/42">
-              无需填写网页表单 · 直接联系 eTMFKing@qq.com
-            </p>
           </div>
         </section>
 
@@ -137,7 +134,7 @@ export default function Home() {
           <h2 className="mt-4 text-balance text-3xl font-black leading-[1.08] tracking-[-.045em]">
             不是又一个扫描 App，
             <br />
-            是现场文件采集的下一代工具。
+            是现场文件收集的下一代工具。
           </h2>
           <p className="mt-5 text-base leading-7 text-[#5d6f82]">
             把扫描、识别、搜索、分类和整理收进一条连续路径。识别结果由你确认，文件名也可以灵活手动修改。
@@ -174,7 +171,8 @@ export default function Home() {
                     05.02.02 · 试验方案签字页
                   </p>
                   <p className="mt-1 break-all font-mono text-[11px] leading-5 text-[#41532c]">
-                    CN001_CN_001_05.02.02_ProtocolSignaturePage_v1.0_20250801.pdf
+                    Study 001_Site 1001_TMF 05.02.02_Protocol Signature
+                    Page_v1.0_20250801.pdf
                   </p>
                 </div>
               </div>
@@ -237,9 +235,9 @@ export default function Home() {
             核心功能 / FEATURES
           </p>
           <h2 className="mt-4 text-3xl font-black leading-[1.08] tracking-[-.045em]">
-            为现场采集文件而生，
+            为现场收集文件而生，
             <br />
-            也为采集文件的人而生。
+            也为收集文件的人而生。
           </h2>
           <div className="mt-8 space-y-3">
             {features.map((feature) => {
