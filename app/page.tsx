@@ -38,7 +38,7 @@ const features = [
     icon: FileOutput,
     title: '规范文件名',
     description:
-      '按试验号、中心号、TMF 编号、文件名、版本号和版本日期组合标准文件名，方便检索。',
+      '按试验号、中心号、TMF 编号、文件名、版本号和版本日期组合标准文件名，命名规则可按需定制，方便检索。',
   },
   {
     icon: FolderTree,
@@ -110,8 +110,8 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-7 text-lg leading-8 text-white/68">
-              面向 CRC、CRA 与 TMF
-              管理者的移动文件收集工具。扫描、识别、匹配目录，再生成规范文件名，一台
+              面向 CRA、CRC 及其他 CO
+              从业者的移动文件收集工具。扫描、识别、匹配目录，再生成规范文件名，一台
               iPhone 就能完成。
             </p>
             <a
