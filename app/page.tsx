@@ -171,7 +171,7 @@ export default function Home() {
                     05.02.02 · 试验方案签字页
                   </p>
                   <p className="mt-1 break-all font-mono text-[11px] leading-5 text-[#41532c]">
-                    Study 001_Site 1001_TMF 05.02.02_Protocol Signature
+                    Study 001_Site 1001_05.02.02_Protocol Signature
                     Page_v1.0_20250801.pdf
                   </p>
                 </div>
