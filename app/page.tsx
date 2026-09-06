@@ -1,19 +1,20 @@
 import {
   ArrowRight,
-  ArrowUpRight,
   BrainCircuit,
   Camera,
   Check,
   FileCheck2,
   FileOutput,
   FolderTree,
-  Mail,
   ScanLine,
   ShieldCheck,
   Sparkles,
   Users,
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import ApplyButton from '@/components/apply-button';
+import { sitePath } from '@/lib/site-path';
 
 const steps = [
   ['01', '文件收集', 'iPhone 文档相机自动裁切，多页合成 PDF。'],
@@ -57,27 +58,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#e8eff5] text-[#071828]">
       <div className="mx-auto min-h-screen max-w-[540px] overflow-hidden bg-[#071828] shadow-[0_0_80px_rgba(7,24,40,.16)]">
-        <header className="flex items-center justify-between px-5 pb-4 pt-5 text-white">
+        <header className="flex items-center px-5 pb-4 pt-5 text-white">
           <a
             href="#top"
             className="flex items-center gap-3"
             aria-label="eTMF王首页"
           >
             <Image
-              src="/app-icon.png"
+              src={sitePath('/app-icon.png')}
               alt=""
               width={36}
               height={36}
               className="size-9 rounded-[10px]"
             />
             <span className="text-lg font-black tracking-tight">eTMF 王</span>
-          </a>
-          <a
-            href="#contact"
-            className="flex items-center gap-1.5 text-sm font-bold text-[#b7f34a]"
-          >
-            联系我们
-            <ArrowUpRight className="size-4" />
           </a>
         </header>
 
@@ -114,19 +108,13 @@ export default function Home() {
               从业者的移动文件收集工具。扫描、识别、匹配目录，再生成规范文件名，一台
               iPhone 就能完成。
             </p>
-            <a
-              href="mailto:eTMFKing@qq.com?subject=申请成为eTMF王种子用户&body=昵称：%0A职业：%0A联系方式：%0A每周文件量：%0AiPhone型号："
-              className="mt-9 inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[#b7f34a] px-6 text-base font-extrabold text-[#071321] shadow-[0_16px_38px_rgba(183,243,74,.16)] transition-colors hover:bg-[#c8ff5f] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#8ee7ff]/50"
-            >
-              发邮件申请体验
-              <Mail className="size-5" />
-            </a>
+            <ApplyButton className="mt-9 inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[#b7f34a] px-6 text-base font-extrabold text-[#071321] shadow-[0_16px_38px_rgba(183,243,74,.16)] transition-colors hover:bg-[#c8ff5f] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#8ee7ff]/50" />
           </div>
         </section>
 
         <section
           id="product"
-          className="rounded-t-[30px] bg-[#f7fafc] px-5 pb-12 pt-10"
+          className="bg-[#f7fafc] px-5 pb-12 pt-10"
         >
           <p className="font-mono text-xs font-bold tracking-[.18em] text-[#0b6fd4]">
             产品概览 / PRODUCT
@@ -322,23 +310,14 @@ export default function Home() {
                 ),
               )}
             </ul>
-            <a
-              href="mailto:eTMFKing@qq.com"
-              className="mt-8 flex items-center justify-between rounded-2xl bg-[#b7f34a] p-4 text-[#071321] transition-colors hover:bg-[#c8ff5f] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#8ee7ff]/50"
-            >
-              <span className="text-lg font-black">eTMFKing@qq.com</span>
-              <ArrowUpRight className="size-5" />
-            </a>
-            <p className="mt-4 text-center text-xs leading-5 text-white/38">
-              请勿在邮件中发送患者信息、试验原始文件或账号密码。
-            </p>
+            <ApplyButton className="mt-8 inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-[#b7f34a] px-6 text-base font-extrabold text-[#071321] shadow-[0_16px_38px_rgba(183,243,74,.16)] transition-colors hover:bg-[#c8ff5f] focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#8ee7ff]/50" />
           </div>
         </section>
 
         <footer className="flex items-center justify-between border-t border-white/10 bg-[#071828] px-5 py-7 text-white">
           <div className="flex items-center gap-2.5">
             <Image
-              src="/app-icon.png"
+              src={sitePath('/app-icon.png')}
               alt=""
               width={28}
               height={28}
@@ -346,9 +325,13 @@ export default function Home() {
             />
             <span className="text-sm font-black">eTMF 王</span>
           </div>
-          <span className="text-xs text-white/35">
-            临床试验文件 · 智能扫描收集
-          </span>
+          <div className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-right text-xs text-white/45">
+            <span>临床试验文件 · 智能扫描收集</span>
+            <span className="hidden text-white/20 sm:inline">·</span>
+            <Link href={sitePath('/privacy')} className="hover:text-white">隐私政策</Link>
+            <Link href={sitePath('/terms')} className="hover:text-white">用户协议</Link>
+            <Link href={sitePath('/data-collection')} className="hover:text-white">数据采集说明</Link>
+          </div>
         </footer>
       </div>
     </main>
