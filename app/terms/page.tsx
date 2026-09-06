@@ -17,7 +17,7 @@ export default function TermsPage() {
         <div className="mt-8 space-y-7 text-[15px] leading-7 text-[#102c48]/82">
           <section>
             <h2 className="text-lg font-black text-[#102c48]">一、协议接受</h2>
-            <p className="mt-2">注册或首次使用 eTMF 王前，请主动勾选并同意本协议和<Link className="font-bold text-[#356b16] underline" href={sitePath('/privacy')}>隐私政策</Link>。识别质量改进计划属于可选功能，需另行阅读并明确授权，相关说明见<Link className="font-bold text-[#356b16] underline" href={sitePath('/data-collection')}>《识别质量改进计划及数据采集授权说明》</Link>。</p>
+            <p className="mt-2">注册或首次使用 eTMF 王前，请主动勾选并同意本协议和<Link className="font-bold text-[#356b16] underline" href={sitePath('/privacy')}>隐私政策</Link>。识别质量改进计划属于可选功能，需另行阅读并明确授权，相关说明见<Link className="font-bold text-[#356b16] underline" href={sitePath('/recognition-quality')}>《识别质量改进计划》</Link>。</p>
             <p className="mt-2">不同意本协议或隐私政策的，无法使用需要账号或个人信息处理的相关功能；不同意可选的识别质量改进计划，不影响扫描、OCR、本地保存和文件元数据同步等核心功能。</p>
           </section>
           <section>
@@ -43,7 +43,7 @@ export default function TermsPage() {
             <h2 className="text-lg font-black text-[#102c48]">五、知识产权与反馈</h2>
             <p className="mt-2">eTMF 王的软件、界面、商标、技术文档、产品结构及运营者提供的分类规则等知识产权，归运营者或相关权利人所有。</p>
             <p className="mt-2">你上传或处理的项目资料及其中原有的知识产权、保密权益，仍归你或其他有权利人所有。我们不会因提供服务而取得该等资料的所有权，仅在提供服务、维护系统和保障安全所必需的范围内进行处理。</p>
-            <p className="mt-2">你提交的意见、建议和错误报告可以用于产品改进，但不应包含你无权披露的项目资料、患者隐私或其他保密信息。识别质量改进样本仅在你单独、明确授权后，按照<Link className="font-bold text-[#356b16] underline" href={sitePath('/data-collection')}>相关授权说明</Link>和<Link className="font-bold text-[#356b16] underline" href={sitePath('/privacy')}>隐私政策</Link>处理。</p>
+            <p className="mt-2">你提交的意见、建议和错误报告可以用于产品改进，但不应包含你无权披露的项目资料、患者隐私或其他保密信息。识别质量改进样本仅在你单独、明确授权后，按照<Link className="font-bold text-[#356b16] underline" href={sitePath('/recognition-quality')}>《识别质量改进计划》</Link>和<Link className="font-bold text-[#356b16] underline" href={sitePath('/privacy')}>隐私政策</Link>处理。</p>
           </section>
           <section>
             <h2 className="text-lg font-black text-[#102c48]">六、账号注销和服务终止</h2>
@@ -67,7 +67,7 @@ export default function TermsPage() {
 
         <nav className="mt-10 flex flex-wrap gap-4 border-t border-[#102c48]/10 pt-5 text-sm font-bold text-[#356b16]">
           <Link href={sitePath('/privacy')}>隐私政策</Link>
-          <Link href={sitePath('/data-collection')}>识别质量改进计划及数据采集授权说明</Link>
+          <Link href={sitePath('/recognition-quality')}>识别质量改进计划</Link>
         </nav>
       </article>
     </main>

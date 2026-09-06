@@ -75,7 +75,7 @@ export default function PrivacyPage() {
 
         <nav className="mt-10 flex flex-wrap gap-4 border-t border-[#102c48]/10 pt-5 text-sm font-bold text-[#356b16]">
           <Link href={sitePath('/terms')}>用户协议</Link>
-          <Link href={sitePath('/data-collection')}>识别质量改进计划及数据采集授权说明</Link>
+          <Link href={sitePath('/recognition-quality')}>识别质量改进计划</Link>
         </nav>
       </article>
     </main>

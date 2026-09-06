@@ -4,7 +4,7 @@
 
 - `/terms`：用户协议
 - `/privacy`：隐私政策
-- `/data-collection`：识别质量改进计划及数据采集授权说明
+- `/recognition-quality`：识别质量改进计划
 
 ## GitHub Pages
 
@@ -16,7 +16,7 @@
 
 - `https://etmfking.github.io/etmf-king-policies/terms`
 - `https://etmfking.github.io/etmf-king-policies/privacy`
-- `https://etmfking.github.io/etmf-king-policies/data-collection`
+- `https://etmfking.github.io/etmf-king-policies/recognition-quality`
 
 正式发布前应再次核对页面内容、运营主体、联系邮箱、数据处理地域和保留期限；不要在此仓库提交账号、密码、Token、生产环境变量或用户数据。
 

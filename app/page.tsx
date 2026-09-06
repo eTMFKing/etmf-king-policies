@@ -330,7 +330,7 @@ export default function Home() {
             <span className="hidden text-white/20 sm:inline">·</span>
             <Link href={sitePath('/privacy')} className="hover:text-white">隐私政策</Link>
             <Link href={sitePath('/terms')} className="hover:text-white">用户协议</Link>
-            <Link href={sitePath('/data-collection')} className="hover:text-white">数据采集说明</Link>
+            <Link href={sitePath('/recognition-quality')} className="hover:text-white">识别质量改进计划</Link>
           </div>
         </footer>
       </div>
