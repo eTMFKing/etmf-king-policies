@@ -26,7 +26,7 @@ export default function ToolPrivacyPage() {
           </section>
           <section>
             <h2 className="text-lg font-black text-[#102c48]">四、反馈与第三方渠道</h2>
-            <p className="mt-2">如果你主动通过 TestFlight、电子邮件或其他渠道反馈问题，你提供的联系信息、文字、截图或附件会经由 Apple 或相应邮件服务处理，并供开发者查看和回复。请勿在反馈中包含患者身份信息、未经脱敏的临床文件、账号密码或其他无权披露的资料。</p>
+            <p className="mt-2">如果你主动通过 TestFlight、电子邮件或其他渠道反馈问题，你提供的联系信息、文字、截图或附件会经由 Apple 或相应邮件服务处理，并供开发者查看和回复。请勿在反馈中包含患者身份信息、账号密码或其他无权向开发者及相关渠道披露的资料。</p>
             <p className="mt-2">Apple 对 TestFlight 安装、崩溃和反馈等信息的处理适用 Apple 的政策；本 App 本身不会因此把你的本地文档上传到开发者后台。</p>
           </section>
           <section>
