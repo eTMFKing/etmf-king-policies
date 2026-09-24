@@ -39,7 +39,7 @@ jobs:
           # generated asset directory to the artifact root to avoid duplication.
           mv dist/client/etmf-king-policies/_next dist/client/_next
           rmdir dist/client/etmf-king-policies
-          for page in privacy terms recognition-quality; do
+          for page in privacy terms recognition-quality tool-privacy; do
             mkdir -p "dist/client/$page"
             mv "dist/client/$page.html" "dist/client/$page/index.html"
           done
