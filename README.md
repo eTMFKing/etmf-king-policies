@@ -5,7 +5,8 @@
 - `/terms`：用户协议
 - `/privacy`：隐私政策
 - `/recognition-quality`：识别质量改进计划
-- `/tool-privacy`：独立 eTMF扫描王 Tool App 隐私政策
+- `/tool-privacy`：独立 eTMF扫描王 iOS Tool App 隐私政策
+- `/tool-android-privacy/`：eTMF扫描王 Android App 隐私政策（静态页面位于 `public/tool-android-privacy/index.html`）
 
 ## GitHub Pages
 
